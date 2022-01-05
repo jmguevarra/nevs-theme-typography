@@ -1,0 +1,57 @@
+{
+    "sections": [
+        { 
+            
+            "name"      : "primary",
+            "id"        : "nevstfont_primary_section",
+            "title"     : "Primary",
+            "desc"      : "Default body font",
+            "panel"     : "nevsplug_typography_panel",
+            "settings" : {
+                "id"            : "nevstfont_primary_settings", 
+                "default"       : "Roboto",
+                "capability"    : "edit_theme_options",
+                "type"          : "option"
+            },
+            "controls": {
+                "id"        : "nevstfont_primary_field",
+                "settings"  : "nevstfont_primary_settings",
+                "label"     : "Font Family",
+                "desc"      : "",
+                "type"      : "select",
+                "choices"   : {
+                    "Roboto"    : "Roboto",
+                    "Open Sans" : "Open Sans",
+                    "Lato"      :  "Lato"
+                }
+            }
+            
+        },
+        {
+            "name"      : "headings",
+            "id"        : "nevstfont_headings_section",
+            "title"     : "Headings",
+            "desc"      : "Modifies fonts settings for H1, H2, H3, H4, H5, H6",
+            "panel"     : "nevsplug_typography_panel",
+            "settings" : {
+                "id"            : "nevstfont_headings_settings", 
+                "default"       : "Roboto",
+                "capability"    : "edit_theme_options",
+                "type"          : "option"
+            },
+            "controls": {
+                "id"        : "nevstfont_headings_field",
+                "settings"  : "nevstfont_headings_settings",
+                "label"     : "Font Family",
+                "desc"      : "",
+                "type"      : "select",
+                "choices"   : {
+                    "Roboto"    : "Roboto",
+                    "Open Sans" : "Open Sans",
+                    "Lato"      :  "Lato"
+                }
+            }
+        }
+        
+    ]
+}
