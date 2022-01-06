@@ -9,8 +9,12 @@
 // if(empty($typography)){ return; }
 // echo '<pre>';
 // foreach($typography['sections'] as $section){
-//     echo $section['settings']['default'];
-//     // echo print_r($section['controls']['choices']);
+//     //echo print_r($section['settings']);
+//     //Field Settings
+//     foreach($section['settings'] as $setting){
+//         echo print_r($setting);
+//         echo $setting["id"];
+//     }
 // }
 // echo '</pre>';
 
@@ -44,21 +48,25 @@ function nevsplug_customize_register($customize){
         ));
 
         //Field Settings
-        $customize->add_setting($section['settings']['id'], array(
-            'default'		=> $section['settings']['default'],
-            'capability'    => $section['settings']['capability'],
-            'type'          => $section['settings']['type']
-        ));
-           
+        foreach($section['settings'] as $setting){
+            $customize->add_setting($setting['id'], array(
+                'default'		=> $setting['default'],
+                'capability'    => $setting['capability'],
+                'type'          => $setting['type']
+            ));
+        }
+
         //Field
-        $customize->add_control( $section['controls']['id'], array(
-            'settings'	    => $section['controls']['settings'],
-            'label'  	    => __($section['controls']['label'], NEVSTFONT_TEXTDOMAIN),
-            'description'	=> __($section['controls']['desc'], NEVSTFONT_TEXTDOMAIN),
-            'section'	    => $section['id'],
-            'type'   	    => $section['controls']['type'],
-            'choices'       => $section['controls']['choices']
-        ));
+        foreach($section['controls'] as $field){
+            $customize->add_control( $field['id'], array(
+                'settings'	    => $field['settings'],
+                'label'  	    => __($field['label'], NEVSTFONT_TEXTDOMAIN),
+                'description'	=> __($field['desc'], NEVSTFONT_TEXTDOMAIN),
+                'section'	    => $field['section'],
+                'type'   	    => $field['type'],
+                'choices'       => $field['choices']
+            ));
+        }
 
     }
 

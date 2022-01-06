@@ -7,24 +7,74 @@
             "title"     : "Primary",
             "desc"      : "Default body font",
             "panel"     : "nevsplug_typography_panel",
-            "settings" : {
-                "id"            : "nevstfont_primary_settings", 
-                "default"       : "Roboto",
-                "capability"    : "edit_theme_options",
-                "type"          : "option"
-            },
-            "controls": {
-                "id"        : "nevstfont_primary_field",
-                "settings"  : "nevstfont_primary_settings",
-                "label"     : "Font Family",
-                "desc"      : "",
-                "type"      : "select",
-                "choices"   : {
-                    "Roboto"    : "Roboto",
-                    "Open Sans" : "Open Sans",
-                    "Lato"      :  "Lato"
+            "settings" : [
+                {
+                    "id"            : "nevstfont_primary_settings", 
+                    "default"       : "Roboto",
+                    "capability"    : "edit_theme_options",
+                    "type"          : "option"
+                },
+                {
+                    "id"            : "nevstfont_primaryweight_settings", 
+                    "default"       : "400",
+                    "capability"    : "edit_theme_options",
+                    "type"          : "option"
+                },
+                {
+                    "id"            : "nevstfont_primarystyle_settings", 
+                    "default"       : "normal",
+                    "capability"    : "edit_theme_options",
+                    "type"          : "option"
                 }
-            }
+
+            ],
+            "controls": [
+                {
+                    "id"        : "nevstfont_primary_field",
+                    "settings"  : "nevstfont_primary_settings",
+                    "section"   : "nevstfont_primary_section",
+                    "label"     : "Font Family",
+                    "desc"      : "",
+                    "type"      : "select",
+                    "choices"   : {
+                        "Roboto"    : "Roboto",
+                        "Open Sans" : "Open Sans",
+                        "Lato"      :  "Lato"
+                    }
+                },
+                {
+                    "id"        : "nevstfont_primaryweight_field",
+                    "settings"  : "nevstfont_primaryweight_settings",
+                    "section"   : "nevstfont_primary_section",
+                    "label"     : "Font Weight",
+                    "desc"      : "",
+                    "type"      : "select",
+                    "choices"   : {
+                        "100"   : "100",
+                        "200"   : "200",
+                        "300"   : "300",
+                        "400"   : "400",
+                        "500"   : "500",
+                        "600"   : "600",
+                        "700"   : "700",
+                        "800"   : "800",
+                        "900"   : "900"
+                    }
+                },
+                {
+                    "id"        : "nevstfont_primarystyle_field",
+                    "settings"  : "nevstfont_primarystyle_settings",
+                    "section"   : "nevstfont_primary_section",
+                    "label"     : "Font Style",
+                    "desc"      : "",
+                    "type"      : "select",
+                    "choices"   : {
+                        "normal"   : "Normal",
+                        "italic"   : "Italic",
+                        "oblique"  : "Oblique"
+                    }
+                }
+            ]
             
         },
         {
@@ -33,24 +83,73 @@
             "title"     : "Headings",
             "desc"      : "Modifies fonts settings for H1, H2, H3, H4, H5, H6",
             "panel"     : "nevsplug_typography_panel",
-            "settings" : {
-                "id"            : "nevstfont_headings_settings", 
-                "default"       : "Roboto",
-                "capability"    : "edit_theme_options",
-                "type"          : "option"
-            },
-            "controls": {
-                "id"        : "nevstfont_headings_field",
-                "settings"  : "nevstfont_headings_settings",
-                "label"     : "Font Family",
-                "desc"      : "",
-                "type"      : "select",
-                "choices"   : {
-                    "Roboto"    : "Roboto",
-                    "Open Sans" : "Open Sans",
-                    "Lato"      :  "Lato"
+            "settings" : [
+                {
+                    "id"            : "nevstfont_headings_settings", 
+                    "default"       : "Roboto",
+                    "capability"    : "edit_theme_options",
+                    "type"          : "option"
+                },
+                {
+                    "id"            : "nevstfont_headingsweight_settings", 
+                    "default"       : "400",
+                    "capability"    : "edit_theme_options",
+                    "type"          : "option"
+                },
+                {
+                    "id"            : "nevstfont_headingsstyle_settings", 
+                    "default"       : "normal",
+                    "capability"    : "edit_theme_options",
+                    "type"          : "option"
                 }
-            }
+            ],
+            "controls": [
+                {
+                    "id"        : "nevstfont_headings_field",
+                    "settings"  : "nevstfont_headings_settings",
+                    "section"   : "nevstfont_headings_section",
+                    "label"     : "Font Family",
+                    "desc"      : "",
+                    "type"      : "select",
+                    "choices"   : {
+                        "Roboto"    : "Roboto",
+                        "Open Sans" : "Open Sans",
+                        "Lato"      :  "Lato"
+                    }
+                },
+                {
+                    "id"        : "nevstfont_headingsweight_field",
+                    "settings"  : "nevstfont_headingsweight_settings",
+                    "section"   : "nevstfont_headings_section",
+                    "label"     : "Font Weight",
+                    "desc"      : "",
+                    "type"      : "select",
+                    "choices"   : {
+                        "100"   : "100",
+                        "200"   : "200",
+                        "300"   : "300",
+                        "400"   : "400",
+                        "500"   : "500",
+                        "600"   : "600",
+                        "700"   : "700",
+                        "800"   : "800",
+                        "900"   : "900"
+                    }
+                },
+                {
+                    "id"        : "nevstfont_headingsstyle_field",
+                    "settings"  : "nevstfont_headingsstyle_settings",
+                    "section"   : "nevstfont_headings_section",
+                    "label"     : "Font Style",
+                    "desc"      : "",
+                    "type"      : "select",
+                    "choices"   : {
+                        "normal"   : "Normal",
+                        "italic"   : "Italic",
+                        "oblique"  : "Oblique"
+                    }
+                }
+            ]
         }
         
     ]
