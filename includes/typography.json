@@ -12,19 +12,22 @@
                     "id"            : "nevstfont_primary_settings", 
                     "default"       : "Roboto",
                     "capability"    : "edit_theme_options",
-                    "type"          : "option"
+                    "type"          : "option",
+                    "transport"     : "postMessage"
                 },
                 {
                     "id"            : "nevstfont_primaryweight_settings", 
                     "default"       : "400",
                     "capability"    : "edit_theme_options",
-                    "type"          : "option"
+                    "type"          : "option",
+                    "transport"     : "postMessage"
                 },
                 {
                     "id"            : "nevstfont_primarystyle_settings", 
                     "default"       : "normal",
                     "capability"    : "edit_theme_options",
-                    "type"          : "option"
+                    "type"          : "option",
+                    "transport"     : "postMessage"
                 }
 
             ],
@@ -88,19 +91,22 @@
                     "id"            : "nevstfont_headings_settings", 
                     "default"       : "Roboto",
                     "capability"    : "edit_theme_options",
-                    "type"          : "option"
+                    "type"          : "option",
+                    "transport"     : "postMessage"
                 },
                 {
                     "id"            : "nevstfont_headingsweight_settings", 
                     "default"       : "400",
                     "capability"    : "edit_theme_options",
-                    "type"          : "option"
+                    "type"          : "option",
+                    "transport"     : "postMessage"
                 },
                 {
                     "id"            : "nevstfont_headingsstyle_settings", 
                     "default"       : "normal",
                     "capability"    : "edit_theme_options",
-                    "type"          : "option"
+                    "type"          : "option",
+                    "transport"     : "postMessage"
                 }
             ],
             "controls": [

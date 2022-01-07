@@ -19,12 +19,11 @@
 // echo '</pre>';
 
 
-
 add_action('customize_register', 'nevsplug_customize_register');
 function nevsplug_customize_register($customize){
 
     //load typography panel obj and check if its not empty
-    $typography = customizerPanels(NEVSTFONT_DIR. '/includes/typography.json');
+    $typography = customizerPanels(NEVSTFONT_DIR . '\includes\typography.json');
     if(empty($typography)){ return; }
 
 	
@@ -52,7 +51,8 @@ function nevsplug_customize_register($customize){
             $customize->add_setting($setting['id'], array(
                 'default'		=> $setting['default'],
                 'capability'    => $setting['capability'],
-                'type'          => $setting['type']
+                'type'          => $setting['type'],
+                'transport'     => $setting['transport']
             ));
         }
 
