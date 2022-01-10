@@ -12,3 +12,4 @@ function nevstFont_enqueueScripts(){
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'nevst-customizer-preview', NEVSTFONT_PLUGINDIR. 'src/assets/js/customizer-preview.js', array('customize-preview', 'jquery'), NEVSTFONT_VERSION, true);
 }
+

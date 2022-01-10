@@ -15,3 +15,8 @@ function customizerPanels($filepath){
     return $panelObj;
 }
 
+function isItalic($style){
+    if($style != 'italic'){ return; }
+
+    return ":ital,";
+}

@@ -73,8 +73,7 @@
                     "type"      : "select",
                     "choices"   : {
                         "normal"   : "Normal",
-                        "italic"   : "Italic",
-                        "oblique"  : "Oblique"
+                        "italic"   : "Italic"
                     }
                 }
             ]

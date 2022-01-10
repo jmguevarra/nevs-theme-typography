@@ -46,6 +46,7 @@ function nevsplug_customize_register($customize){
             'panel'			=> $section['panel']
         ));
 
+
         //Field Settings
         foreach($section['settings'] as $setting){
             $customize->add_setting($setting['id'], array(
